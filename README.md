@@ -79,7 +79,7 @@ Each part of the notebook ends with the same Git loop:
 | 6. Open a pull request | on GitHub: *Compare & pull request*, base `main` of **your fork** |
 | 7. Review and merge | a neighbor leaves a comment, you **Merge** and **Delete branch** |
 
-This is the **60-minute version**: you write two functions and ship two pull requests. Everything else is complete and runs as-is.
+You write two functions and ship two pull requests. Everything else is complete and runs as-is.
 
 | Part | You write | Branch |
 |---|---|---|
@@ -87,8 +87,6 @@ This is the **60-minute version**: you write two functions and ship two pull req
 | 2. Find off-ball runs | `get_off_ball_runs` in `src/events.py` | `feature/off-ball-runs` → PR #1 |
 | 3. Speed from positions | `add_velocity` in `src/kinematics.py` | `feature/kinematics` → PR #2 |
 | 4. Plot and animate | nothing, run the cells | — |
-
-The full 2.5-hour version (every module as an exercise) is on the `main` branch.
 
 > **Opening the PR:** GitHub may default the base to the *original* workshop repo. Change "base repository" to **your fork** so you merge into your own `main`.
 
@@ -136,4 +134,4 @@ No internet? A facilitator can give you a local copy of a match folder; set `WOR
 
 ## For facilitators
 
-Reference solutions (complete `src/` and `notebooks/workshop_solutions.ipynb`) live on the `solutions` branch. Forks made with "Copy the `main` branch only" do not include it.
+Reference solutions (`get_off_ball_runs` and `add_velocity` filled in) live on the `solutions` branch. Forks made with "Copy the `main` branch only" do not include it.
