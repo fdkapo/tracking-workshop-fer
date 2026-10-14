@@ -33,21 +33,25 @@ You will work in **your own copy** (a fork) of this repo, so you can push branch
    git remote add upstream https://github.com/zcochran27/tracking-workshop.git
    git remote -v        # origin = your fork, upstream = the workshop repo
    ```
-4. Create a virtual environment and install the packages:
+4. Create a virtual environment and install the packages.
+   A **virtual environment** (venv) is a private set of packages for this project only, so installing kloppy here can't break your other classes' code. The `.venv` folder is gitignored: you commit `requirements.txt`, never the environment.
    ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate          # Windows: .venv\Scripts\activate
+   python3 -m venv .venv                     # Windows: python -m venv .venv
+   source .venv/bin/activate                 # Windows: .venv\Scripts\activate
    pip install -r requirements.txt
-   nbstripout --install               # keeps notebook outputs out of your commits
+   python -m ipykernel install --user --name tracking-workshop --display-name "tracking-workshop"
+   nbstripout --install                      # keeps notebook outputs out of your commits
    ```
+   Your prompt now starts with `(.venv)`. Run `activate` again each time you open a new terminal.
 5. Check everything works (needs internet, takes about a minute):
    ```bash
    python check_setup.py
    ```
-6. Open the notebook:
+6. Open the notebook and pick the **tracking-workshop** kernel (top-right corner):
    ```bash
    jupyter lab notebooks/workshop.ipynb
    ```
+   Using VS Code instead? Open the notebook, click *Select Kernel* and choose `.venv` or **tracking-workshop**.
 
 ## What's in here
 
