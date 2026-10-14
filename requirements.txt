@@ -1,0 +1,9 @@
+kloppy>=3.19
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
+mplsoccer>=1.4
+pillow>=10.0
+jupyterlab>=4.0
+ipykernel>=6.0
+nbstripout>=0.7
