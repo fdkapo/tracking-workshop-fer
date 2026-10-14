@@ -115,6 +115,25 @@ Stuck in a merge conflict? Open the file, keep the lines you want, delete the `<
 
 No internet? A facilitator can give you a local copy of a match folder; set `WORKSHOP_DATA_DIR` to the folder that contains `matches.json` before starting Jupyter.
 
+## Keep learning
+
+**Videos**
+- [Friends of Tracking](https://www.youtube.com/@friendsoftracking755): YouTube channel with live sessions from people working in football analytics, many on tracking data.
+- Laurie Shaw's tracking-data series on Friends of Tracking: [1. Getting started and visualizing](https://www.youtube.com/watch?v=8TrleFklEsE) · [2. Movies, velocities and physical reports](https://www.youtube.com/watch?v=VX3T-4lB2o0) · [3. Pitch control](https://www.youtube.com/watch?v=5X1cSehLg6s) · [4. EPV and decision-making](https://www.youtube.com/watch?v=KXSLKwADXKI)
+
+**Code to follow along**
+- [LaurieOnTracking](https://github.com/Friends-of-Tracking-Data-FoTD/LaurieOnTracking): the code behind Laurie's videos (velocities, pitch control, EPV) on Metrica data.
+- [Friends of Tracking on GitHub](https://github.com/Friends-of-Tracking-Data-FoTD): passing networks, Last Row tracking data, Soccermatics for Python.
+- [SkillCorner Open Data tutorials](https://github.com/SkillCorner/opendata/tree/master/notebooks/tutorials): notebooks for dynamic events, phases of play, off-ball runs and tracking.
+
+**Courses and articles**
+- Soccermatics: [Pitch control](https://soccermatics.readthedocs.io/en/latest/lesson6/PitchControl.html) · [Off-ball runs](https://soccermatics.readthedocs.io/en/latest/lesson7/OffBallRuns.html) · [Physical data](https://soccermatics.readthedocs.io/en/latest/lesson8/PhysicalData.html)
+- SkillCorner: [Visualising Off-Ball Runs](https://skillcorner.com/articles/skillcorner-open-data-4-visualising-off-ball-runs)
+
+**More data and libraries**
+- [Metrica Sports sample data](https://github.com/metrica-sports/sample-data): free anonymized tracking and event data.
+- [kloppy](https://kloppy.pysport.org/) · [mplsoccer](https://mplsoccer.readthedocs.io/en/latest/) · [floodlight](https://github.com/floodlight-sports/floodlight)
+
 ## For facilitators
 
 Reference solutions (complete `src/` and `notebooks/workshop_solutions.ipynb`) live on the `solutions` branch. Forks made with "Copy the `main` branch only" do not include it.
