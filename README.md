@@ -56,14 +56,14 @@ tracking-workshop/
 ├── notebooks/workshop.ipynb   # the guided notebook: start here
 ├── src/
 │   ├── load.py                # loading helpers (complete, read it as an example)
-│   ├── events.py              # Part 2: filter events to off-ball runs
-│   ├── kinematics.py          # Part 3: speed, acceleration, direction, distances
-│   └── viz.py                 # Parts 4–5: plot a frame, animate a sequence
+│   ├── events.py              # Part 2: YOU write get_off_ball_runs
+│   ├── kinematics.py          # Part 3: YOU write add_velocity
+│   └── viz.py                 # Part 4: plot a frame, animate a sequence (complete)
 ├── check_setup.py
 └── requirements.txt
 ```
 
-Functions marked `TODO` in `src/` are yours to write. The notebook has a **Check** cell after each one that tells you when it works.
+Two functions marked `TODO` in `src/` are yours to write. The notebook has a **Check** cell after each one that tells you when it works.
 
 ## The workshop loop
 
@@ -79,13 +79,16 @@ Each part of the notebook ends with the same Git loop:
 | 6. Open a pull request | on GitHub: *Compare & pull request*, base `main` of **your fork** |
 | 7. Review and merge | a neighbor leaves a comment, you **Merge** and **Delete branch** |
 
-| Part | Branch |
-|---|---|
-| 1. Load and explore | `feature/explore` (commit only) |
-| 2. Off-ball runs | `feature/off-ball-runs` |
-| 3. Kinematics | `feature/kinematics` |
-| 4. Plot a frame | `feature/frame-viz` |
-| 5. Animate | `feature/animation` |
+This is the **60-minute version**: you write two functions and ship two pull requests. Everything else is complete and runs as-is.
+
+| Part | You write | Branch |
+|---|---|---|
+| 1. Load and explore | nothing, run the cells | stay on `main` |
+| 2. Find off-ball runs | `get_off_ball_runs` in `src/events.py` | `feature/off-ball-runs` → PR #1 |
+| 3. Speed from positions | `add_velocity` in `src/kinematics.py` | `feature/kinematics` → PR #2 |
+| 4. Plot and animate | nothing, run the cells | — |
+
+The full 2.5-hour version (every module as an exercise) is on the `main` branch.
 
 > **Opening the PR:** GitHub may default the base to the *original* workshop repo. Change "base repository" to **your fork** so you merge into your own `main`.
 
