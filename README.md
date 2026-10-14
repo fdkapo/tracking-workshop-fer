@@ -30,7 +30,7 @@ You will work in **your own copy** (a fork) of this repo, so you can push branch
    ```
 3. Link the original repo as `upstream`, so you can pull fixes during the workshop:
    ```bash
-   git remote add upstream https://github.com/<workshop-owner>/tracking-workshop.git
+   git remote add upstream https://github.com/zcochran27/tracking-workshop.git
    git remote -v        # origin = your fork, upstream = the workshop repo
    ```
 4. Create a virtual environment and install the packages:
