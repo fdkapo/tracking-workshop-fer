@@ -48,8 +48,15 @@ def add_velocity(xy: pd.DataFrame, fps: int = FPS) -> pd.DataFrame:
         - speed = sqrt(vx^2 + vy^2)  ->  ``np.hypot(vx, vy)``
         - speed_kmh = speed * 3.6
     """
+    out = xy.copy()
+    dt = out["frame_id"].diff() / fps
+    out["vx"] = out["x"].diff() / dt
+    out["vy"] = out["y"].diff() / dt
+    out["speed"] = np.hypot(out["vx"], out["vy"])
+    out["speed_kmh"] = out["speed"] * 3.6
+    return out
     # TODO (Part 3): replace the line below with your implementation
-    raise NotImplementedError("add_velocity is your Part 3 task")
+    # raise NotImplementedError("add_velocity is your Part 3 task")
 
 
 def add_acceleration(xy: pd.DataFrame, fps: int = FPS) -> pd.DataFrame:
